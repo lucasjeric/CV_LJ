@@ -63,6 +63,7 @@ a:hover {
     padding: 5px;
 }
 .acerca{
+    width: 100%;
     display: flex;
     border-color: #222426;
     border: 2px solid;
@@ -80,6 +81,13 @@ a:hover {
     display: flex;
     margin-left: 5px;
     color: #F2F2F2;
+    flex-direction: column;
+}
+.textoExperiencia{
+    width: 100%;
+    display: flex;
+    margin-left: 5px;
+    color: #F2F2F2;
 }
 footer{
     width: 100%;
@@ -88,4 +96,23 @@ footer{
 .experiencia{
     width: 100%;
     margin: 5px;
+}
+
+@media (max-width: 768px){
+    .menu{
+        flex-direction: column;
+    }
+    .barra{
+        height: 125px;
+    }
+    .menu li{
+        margin: 5px;
+        width: 40%;
+    }
+    .acerca{
+        flex-direction: column;
+    }
+    .textoExperiencia{
+        flex-direction: column;
+    }
 }
